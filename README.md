@@ -1,4 +1,4 @@
-# Cellpose_GIGA
+# Cellpose_GIGA + BIOP FIJI
 A generalist algorithm for cell and nucleus segmentation. 
 <img src="https://raw.githubusercontent.com/kevinjohncutler/cellpose/master/cellpose/logo/logo.png?raw=True" width="250" title="cellpose" alt="cellpose" align="right" vspace = "50">
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="500" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
