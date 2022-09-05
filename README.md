@@ -17,7 +17,6 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
 3. python -m cellpose
 
 #### 2. Using the Cellpose GUI
-
 The GUI serves two main functions:
 1. Running the segmentation algorithm.
 2. Manually labelling data.
@@ -26,32 +25,32 @@ The GUI serves two main functions:
     <img src="https://www.cellpose.org/static/images/cellpose_gui.png" width="500" title="cellpose2 gui screenshot" alt="cellpose2 gui screenshot" align="right" vspace = "50">
 #### Main GUI controls
   
-- Pan = left-click + drag
+- `Pan` = left-click + drag
   
-- Zoom = scroll wheel (or +/= and - buttons)
+- `Zoom` = scroll wheel (or +/= and - buttons)
   
-- Full view = double left-click
+- `Full view` = double left-click
   
-- Select mask = left-click on mask
+- `Select mask` = left-click on mask
   
-- Delete mask = Ctrl (or Command on Mac) + left-click
+- `Delete mask` = Ctrl (or Command on Mac) + left-click
   
-- Merge masks = Alt + left-click (will merge last two)
+- `Merge masks` = Alt + left-click (will merge last two)
   
-- Start draw mask = right-click
+- `Start draw mask` = right-click
   
-- End draw mask = right-click, or return to circle at beginning
+- `End draw mask` = right-click, or return to circle at beginning
 
   
 
 - Overlaps in masks are NOT allowed. If you draw a mask on top of another mask, it is cropped so that it doesn’t overlap with the old mask. Masks in 2D should be single strokes (if single_stroke is checked).
   
 #### Segmentation options
-- SIZE: you can manually enter the approximate diameter for your cells, or press “calibrate” to let the model estimate it. The size is represented by a disk at the bottom of the view window (can turn this disk off by unchecking “scale disk on”).
-- use GPU: activate it to save time
-- MODEL: there is a cytoplasm model and a nuclei model, choose what you want to segment
-- CHAN TO SEG: this is the channel in which the cytoplasm or nuclei exist
-- CHAN2 (OPT): if cytoplasm model is chosen, then choose the nuclear channel for this option
+- `SIZE`: you can manually enter the approximate diameter for your cells, or press “calibrate” to let the model estimate it. The size is represented by a disk at the bottom of the view window (can turn this disk off by unchecking “scale disk on”).
+- `GPU`: activate it to save time
+- `MODEL`: there is a cytoplasm model and a nuclei model, choose what you want to segment
+- `CHAN TO SEG`: this is the channel in which the cytoplasm or nuclei exist
+- `CHAN2` (OPT): if cytoplasm model is chosen, then choose the nuclear channel for this option
 
 #### 3. Training your own cellpose model
 1. Drag and drop your images .tif, .png, .jpg, .gif) into the GUI
@@ -64,4 +63,24 @@ The GUI serves two main functions:
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
- 
+#### 4. Predict Cellpose with BIOP plugin on FIJI
+1. Open FIJI
+2. Drag and drop the images
+3. Start Plugins > BIOP > Cellpose > Cellpose Advanced (Custom model)
+4. In model path put your own model path
+5. Put Own model `cyto2` or `nuclei`
+6. Choose `3D` if you want to predict 2D + Time or 3D dataset (x,y,z)
+<img src="https://github.com/BIOP/ijl-utilities-wrappers/blob/cellpose07/resources/cellposeAdvParam.png" title="CellposeCommandAdvanced" width="50%" align="center">
+
+BUT in case you need more parameters, this command also comes with a string field for additional parameters following pattern : `--channel_axis,CHANNEL_AXIS,--dir_above`
+
+For convenience 3 more commands exist:
+- `Segment Nuclei`, no parameter, ideal to test on blobs
+- `Segment Nuclei Advanced`, some parameter available
+- `Cellpose Advanced` (same parameters as command `Cellpose Advanced (own model)` without possibility to select your own model)
+
+**NOTE** We recommand users to prepare in Fiji the minimal image to be processed by cellpose before using the plugin.
+For example, from a 4 channels image (with nuclei, membrane , proteinX, ... stainings) extract the membrane and nuclei channel, make a composite and run cellpose command on it.
+
+For more info about parameters please refer to [cellpose.readthedocs.io](https://cellpose.readthedocs.io/en/latest/settings.html#)
+
