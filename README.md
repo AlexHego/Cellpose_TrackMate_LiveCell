@@ -8,7 +8,15 @@ A generalist algorithm for cell and nucleus segmentation.
 Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Cellpose 2.0 (human-in-the-loop), read the [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1) or watch the [talk](https://www.youtube.com/watch?v=3ydtAhfq6H0). To learn about Cellpose 1.0, read the [paper](https://t.co/kBMXmPp3Yn?amp=1) or watch the [talk](https://t.co/JChCsTD0SK?amp=1). For support, please open an [issue](https://github.com/MouseLand/cellpose/issues).  Please find the detailed documentation at <span style="font-size:larger;">[cellpose.readthedocs.io]
 
 ## Step-by-step tutorial
-#### 1. Starting Cellpose GUI
+#### 0. export data from incucyte and merge the data on your computer
+1. connect to your incucyte session and export the data
+2. download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/cellpose_GIGA/blob/main/incucyte_merge_files_v3.ijm)
+3. download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
+4. Update ImageJ/Fiji > `Help` > `Update...`
+5. Restart ImageJ
+6. Drag and drop the script and run it 
+
+#### 1. Starting Cellpose GUI on the Zeiss Workstation
 1. double click on Cellpose_2 shortcut on the desktop
 
 #### (optional) Starting Cellpose GUI by with conda
