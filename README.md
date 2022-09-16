@@ -10,7 +10,7 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
 ## Step-by-step tutorial
 #### 0. export data from incucyte and merge the data on your computer
 1. connect to your incucyte session and export the data
-2. download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm)  BSD-3 licence </br>
+2. download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) , BSD-3 licence </br>
 Right click on `RaW`  > `Save As...`  (please save as .ijm)
 3. download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 4. Update ImageJ/Fiji > `Help` > `Update...`
