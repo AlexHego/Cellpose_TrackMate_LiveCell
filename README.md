@@ -63,7 +63,7 @@ The GUI serves two main functions:
 
 #### 3. Training your own cellpose model
 1. Drag and drop your images .tif, .png, .jpg, .gif) into the GUI
-2. Run Try one cellpose models in the GUI. Make sure that if you have a nuclear channek you have selected it for CHAN2.
+2. Run Try one cellpose models in the GUI. Make sure that if you have a nuclear channel you have selected it for CHAN2.
 3. Fix the region of interrest (ROIs) by deleting incorrect (CTRL + left click) and drawing new ones (right click and close the shape)
 4. Save the modification with CTRL + S
 5. Go to the “Models” menu in the File bar at the top and click “Train new model…” or use shortcut CTRL+T.
