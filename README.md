@@ -15,26 +15,21 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
 2. Download the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm) 
 3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 4. Update ImageJ/Fiji > `Help` > `Update...`
-5. Restart ImageJ
+5. Close Fiji
 
 #### II. Starting Cellpose GUI on PC
 1. double click on Cellpose_2 shortcut on the desktop
-
-#### (optional) Starting Cellpose GUI by with conda
-Activate miniconda3 > `conda activate cellpose` > `python -m cellpose`
-
+2. (optional) Starting Cellpose GUI by with conda : Activate miniconda3 > `conda activate cellpose` > `python -m cellpose`
 
 #### III. Using the Cellpose GUI
-The GUI serves 
-1. Running the segmentation algorithm.
-2. Manually labelling data.
-3. (NEW) Fine-tuning a pretrained cellpose model on your own data.
+The GUI serves : Running the segmentation algorithm, manually labelling data, fine-tuning a pretrained cellpose model on your own data.
+</br>
 
-    <img src="https://www.cellpose.org/static/images/cellpose_gui.png" width="500" title="cellpose2 gui screenshot" alt="cellpose2 gui screenshot" align="right" vspace = "50">
+<img src="https://www.cellpose.org/static/images/cellpose_gui.png" width="480" title="cellpose2 gui screenshot" alt="cellpose2 gui screenshot" align="right" vspace = "50">
+
 #### Main GUI controls
-  
 - `Pan` = left-click + drag
-  
+
 - `Zoom` = scroll wheel (or +/= and - buttons)
   
 - `Full view` = double left-click
@@ -48,8 +43,8 @@ The GUI serves
 - `Start draw mask` = right-click
   
 - `End draw mask` = right-click, or return to circle at beginning
-
-- Overlaps in masks are NOT allowed. If you draw a mask on top of another mask, it is cropped so that it doesn’t overlap with the old mask. Masks in 2D should be single strokes (if single_stroke is checked).
+</br>
+**Note: ** Overlaps in masks are NOT allowed. If you draw a mask on top of another mask, it is cropped so that it doesn’t overlap with the old mask. Masks in 2D should be single strokes (if single_stroke is checked).
   
 #### Segmentation options
 - `SIZE`: you can manually enter the approximate diameter for your cells, or press “calibrate” to let the model estimate it. The size is represented by a disk at the bottom of the view window (can turn this disk off by unchecking “scale disk on”).
@@ -73,7 +68,7 @@ The GUI serves
 1. Open FIJI
 2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
 3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
-4. Click Run and follow the istructions
+4. Click Run and follow the instructions
 
 #### V. Predict Cellpose with [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md)
 1. Open FIJI
