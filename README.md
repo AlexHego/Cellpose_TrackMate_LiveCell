@@ -64,7 +64,7 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
-#### V. Predict Cellpose and fuse the timelapse data per well with [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
+#### V. Predict Cellpose and fuse the timelapse data per well
 1. Open FIJI
 2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
 3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
@@ -75,3 +75,5 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 
 
 **CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
+
+[BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
