@@ -1,6 +1,7 @@
-# Cellpose_GIGA + BIOP FIJI
+# Cellpose and TrackMate for Live cells imaging
+## Cellpose
 A generalist algorithm for cell and nucleus segmentation. 
-<img src="https://raw.githubusercontent.com/kevinjohncutler/cellpose/master/cellpose/logo/logo.png?raw=True" width="250" title="cellpose" alt="cellpose" align="right" vspace = "50">
+
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="500" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
 **CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
@@ -9,16 +10,22 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
 
 ## Step-by-step tutorial
 #### 0. export data from incucyte and merge the data on your computer
-1. connect to your incucyte session and export the data
-2. download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) , BSD-3 licence </br>
+1. connect to your incucyte session and export the data with the following prefix
+- `Segment Nuclei`, no parameter, ideal to test on blobs
+3.     
+4. download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) , BSD-3 licence </br>
 Right click on `RaW`  > `Save As...`  (please save as .ijm)
-3. download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
-4. Update ImageJ/Fiji > `Help` > `Update...`
-5. Restart ImageJ
-6. Drag and drop the script and run it 
+5. download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
+6. Update ImageJ/Fiji > `Help` > `Update...`
+7. Restart ImageJ
+8. Drag and drop the script and run it 
 
-#### 1. Starting Cellpose GUI on the Zeiss Workstation
+#### 1. Starting Cellpose GUI on PC
 1. double click on Cellpose_2 shortcut on the desktop
+OR
+1. Start conda or miniconda
+2. `conda activate cellpose`
+3. `python -m cellpose`
 
 #### (optional) Starting Cellpose GUI by with conda
 1. Activate miniconda3
