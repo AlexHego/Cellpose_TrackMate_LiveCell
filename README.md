@@ -12,8 +12,7 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
     - `Phase_` for Phase contrast data
     - `Green_` for green fluorescence
     - `Red_` for red fluorescence
-2. Download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) , BSD-3 licence </br>
-Right click on `RaW`  > `Save As...`  (please save as .ijm)
+2. Download the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm) 
 3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 4. Update ImageJ/Fiji > `Help` > `Update...`
 5. Restart ImageJ
