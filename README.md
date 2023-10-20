@@ -49,8 +49,6 @@ The GUI serves
   
 - `End draw mask` = right-click, or return to circle at beginning
 
-  
-
 - Overlaps in masks are NOT allowed. If you draw a mask on top of another mask, it is cropped so that it doesn’t overlap with the old mask. Masks in 2D should be single strokes (if single_stroke is checked).
   
 #### Segmentation options
@@ -71,20 +69,14 @@ The GUI serves
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
+#### V. Predict Cellpose and fuse the timelapse data per well with [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
+1. Open FIJI
+2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
+3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
+4. Click Run and follow the istructions
+
 #### V. Predict Cellpose with [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md)
 1. Open FIJI
-2. Drag and drop the images
-3. Start Plugins > BIOP > Cellpose > Cellpose Advanced (Custom model)
-4. In model path put your own model path
-5. Put Own model `cyto2` or `nuclei`
-6. Choose `3D` if you want to predict 2D + Time or 3D dataset (x,y,z)
-<img src="https://github.com/BIOP/ijl-utilities-wrappers/blob/cellpose07/resources/cellposeAdvParam.png" title="CellposeCommandAdvanced" width="50%" align="center">
 
-BUT in case you need more parameters, this command also comes with a string field for additional parameters following pattern : `--channel_axis,CHANNEL_AXIS,--dir_above`
 
-For convenience 3 more commands exist:
-- `Segment Nuclei`, no parameter, ideal to test on blobs
-- `Segment Nuclei Advanced`, some parameter available
-- `Cellpose Advanced` (same parameters as command `Cellpose Advanced (own model)` without possibility to select your own model)
-
-**CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
+**CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
