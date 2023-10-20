@@ -4,36 +4,29 @@ A generalist algorithm for cell and nucleus segmentation.
 
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="500" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
-**CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
-
 Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Cellpose 2.0 (human-in-the-loop), read the [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1) or watch the [talk](https://www.youtube.com/watch?v=3ydtAhfq6H0). To learn about Cellpose 1.0, read the [paper](https://t.co/kBMXmPp3Yn?amp=1) or watch the [talk](https://t.co/JChCsTD0SK?amp=1). For support, please open an [issue](https://github.com/MouseLand/cellpose/issues).  Please find the detailed documentation at <span style="font-size:larger;">[cellpose.readthedocs.io]
 
-## Step-by-step tutorial
-#### 0. export data from incucyte and merge the data on your computer
-1. connect to your incucyte session and export the data with the following prefix
-- `Segment Nuclei`, no parameter, ideal to test on blobs
-3.     
-4. download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) , BSD-3 licence </br>
+### Step-by-step tutorial
+#### I. export data from incucyte, download Fiji and update it
+1. Connect to your incucyte session and export the data with the following prefix :
+    - `Phase_` for Phase contrast data
+    - `Green_` for green fluorescence
+    - `Red_` for red fluorescence
+2. Download the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) , BSD-3 licence </br>
 Right click on `RaW`  > `Save As...`  (please save as .ijm)
-5. download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
-6. Update ImageJ/Fiji > `Help` > `Update...`
-7. Restart ImageJ
-8. Drag and drop the script and run it 
+3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
+4. Update ImageJ/Fiji > `Help` > `Update...`
+5. Restart ImageJ
 
-#### 1. Starting Cellpose GUI on PC
+#### II. Starting Cellpose GUI on PC
 1. double click on Cellpose_2 shortcut on the desktop
-OR
-1. Start conda or miniconda
-2. `conda activate cellpose`
-3. `python -m cellpose`
 
 #### (optional) Starting Cellpose GUI by with conda
-1. Activate miniconda3
-2. conda activate cellpose
-3. python -m cellpose
+Activate miniconda3 > `conda activate cellpose` > `python -m cellpose`
 
-#### 2. Using the Cellpose GUI
-The GUI serves two main functions:
+
+#### III. Using the Cellpose GUI
+The GUI serves 
 1. Running the segmentation algorithm.
 2. Manually labelling data.
 3. (NEW) Fine-tuning a pretrained cellpose model on your own data.
@@ -68,7 +61,7 @@ The GUI serves two main functions:
 - `CHAN TO SEG`: this is the channel in which the cytoplasm or nuclei exist
 - `CHAN2` (OPT): if cytoplasm model is chosen, then choose the nuclear channel for this option
 
-#### 3. Training your own cellpose model
+#### IV. Training your own cellpose model
 1. Drag and drop your images .tif, .png, .jpg, .gif) into the GUI
 2. Run Try one cellpose models in the GUI. Make sure that if you have a nuclear channel you have selected it for CHAN2.
 3. Fix the region of interrest (ROIs) by deleting incorrect (CTRL + left click) and drawing new ones (right click and close the shape)
@@ -79,7 +72,7 @@ The GUI serves two main functions:
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
-#### 4. Predict Cellpose with BIOP plugin on FIJI
+#### V. Predict Cellpose with [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md)
 1. Open FIJI
 2. Drag and drop the images
 3. Start Plugins > BIOP > Cellpose > Cellpose Advanced (Custom model)
@@ -95,8 +88,4 @@ For convenience 3 more commands exist:
 - `Segment Nuclei Advanced`, some parameter available
 - `Cellpose Advanced` (same parameters as command `Cellpose Advanced (own model)` without possibility to select your own model)
 
-**NOTE** We recommand users to prepare in Fiji the minimal image to be processed by cellpose before using the plugin.
-For example, from a 4 channels image (with nuclei, membrane , proteinX, ... stainings) extract the membrane and nuclei channel, make a composite and run cellpose command on it.
-
-For more info about parameters please refer to [cellpose.readthedocs.io](https://cellpose.readthedocs.io/en/latest/settings.html#)
-
+**CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
