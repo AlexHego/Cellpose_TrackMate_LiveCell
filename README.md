@@ -1,7 +1,7 @@
 # Cellpose and TrackMate for Live cells imaging
 Cellpose
 ------
-A generalist algorithm for cell and nucleus segmentation. 
+Cellpose is a generalist, Deep Learning-based segmentation method, which can precisely segment cells from a wide range of image types. Cellpose was trained on a new dataset of highly varied images of cells, containing over 70,000 segmented objects. Cellpose 2.0 a is new package which includes an ensemble of diverse pretrained models as well as a human-in-the-loop pipeline for quickly prototyping new specialist models. Specialist models pretrained on the Cellpose dataset can achieve state-of-the-art segmentation on new image categories with very little user-provided training data.
 
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="400" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
