@@ -1,17 +1,32 @@
 # Cellpose and TrackMate for Live cells imaging
-## Cellpose
+Cellpose
+------
 A generalist algorithm for cell and nucleus segmentation. 
 
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="500" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
-Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Cellpose 2.0 (human-in-the-loop), read the [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1) or watch the [talk](https://www.youtube.com/watch?v=3ydtAhfq6H0). To learn about Cellpose 1.0, read the [paper](https://t.co/kBMXmPp3Yn?amp=1) or watch the [talk](https://t.co/JChCsTD0SK?amp=1). For support, please open an [issue](https://github.com/MouseLand/cellpose/issues).  Please find the detailed documentation at <span style="font-size:larger;">[cellpose.readthedocs.io]
 
-## TrackMate
+### CITATION: 
+Cellpose is based on a publication, If you use it successfully for your research please be so kind to cite these papers : for the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
 
 
-### Step-by-step tutorial
+TrackMate
 ------
-#### I. export data from incucyte, download Fiji and update it
+TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
+
+### Citation TrackMate
+
+Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite this work:
+
+Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, __TrackMate: An open and extensible platform for single-particle tracking__, Methods, Available online 3 October 2016, ISSN 1046-2023, http://dx.doi.org/10.1016/j.ymeth.2016.09.016. (http://www.sciencedirect.com/science/article/pii/S1046202316303346)
+
+
+[BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
+
+
+# Step-by-step tutorial
+
+I. export data from incucyte, download Fiji and update it
 ------
 1. Connect to your incucyte session and export the data with the following prefix :
     - `Phase_` for Phase contrast data
@@ -22,19 +37,19 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
 4. Update ImageJ/Fiji > `Help` > `Update...`
 5. Close Fiji
 
-#### II. Starting Cellpose GUI on PC
+II. Starting Cellpose GUI on PC
 ------
 1. double click on Cellpose_2 shortcut on the desktop
 2. (optional) Starting Cellpose GUI by with conda : Activate miniconda3 > `conda activate cellpose` > `python -m cellpose`
 
-#### III. Using the Cellpose GUI
+III. Using the Cellpose GUI
 ------
 The GUI serves : Running the segmentation algorithm, manually labelling data, fine-tuning a pretrained cellpose model on your own data.
 </br>
 
 <img src="https://www.cellpose.org/static/images/cellpose_gui.png" width="480" title="cellpose2 gui screenshot" alt="cellpose2 gui screenshot" align="right" vspace = "50">
 
-#### Main GUI controls
+Main GUI controls
 ------
 - `Pan` = left-click + drag
 
@@ -54,7 +69,7 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 </br>
 **Note: ** Overlaps in masks are NOT allowed. If you draw a mask on top of another mask, it is cropped so that it doesn’t overlap with the old mask. Masks in 2D should be single strokes (if single_stroke is checked).
   
-#### Segmentation options
+Segmentation options
 ------
 - `SIZE`: you can manually enter the approximate diameter for your cells, or press “calibrate” to let the model estimate it. The size is represented by a disk at the bottom of the view window (can turn this disk off by unchecking “scale disk on”).
 - `GPU`: activate it to save time
@@ -62,7 +77,7 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 - `CHAN TO SEG`: this is the channel in which the cytoplasm or nuclei exist
 - `CHAN2` (OPT): if cytoplasm model is chosen, then choose the nuclear channel for this option
 
-#### IV. Training your own cellpose model
+IV. Training your own cellpose model
 ------
 1. Drag and drop your images .tif, .png, .jpg, .gif) into the GUI
 2. Run Try one cellpose models in the GUI. Make sure that if you have a nuclear channel you have selected it for CHAN2.
@@ -74,7 +89,7 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
-#### V. Predict Cellpose and fuse the timelapse data per well
+V. Predict Cellpose and fuse the timelapse data per well
 ------
 1. Open FIJI
 2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
@@ -82,9 +97,4 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 4. Click Run and follow the instructions
 
 
-1. Open FIJI
 
-
-**CITATION**: If you use the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
-
-[BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
