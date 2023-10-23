@@ -120,7 +120,7 @@ V. TrackMate
 
 VI. TrackMate Batcher
 ------
-<img src="https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/f/9/f9933e441404488234805dc40182cdbec1108725_2_651x750.png" width="400" align="right" />
+<img src="https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/f/9/f9933e441404488234805dc40182cdbec1108725_2_651x750.png" width="500" align="right" />
 
 1.  Top-left specify the paths to the input images. You can drag and drop folder and files on this quadrant, they will be added automatically
 </br>
