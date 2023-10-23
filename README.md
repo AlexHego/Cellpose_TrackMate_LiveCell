@@ -116,6 +116,19 @@ V. TrackMate
 5. Segment in channel 2
 6. Filter the spot if needed like size, position etc...
 7. Select LAP Tracker and set the `Linking max distance`, `Gap-closing max distance`, `Gap-closing max frame gap`
-8. Save the .xml file to run the analysis in batch
-9. 
+8. Save the .xml file for batch analysis
 
+VI. TrackMate Batcher
+------
+<img src="https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/f/9/f9933e441404488234805dc40182cdbec1108725_2_651x750.png" width="400" align="right" />
+
+1.  Top-left specify the paths to the input images. You can drag and drop folder and files on this quadrant, they will be added automatically
+</br>
+
+2.    The top-right specify the tracking parameters you want to use. Here you need to browse (drag and drop also works) to a TrackMate XML file where the settings are saved.
+ </br>
+ 
+3.  The bottom-left specify the outputs of the batch process. You can export CSV tables, an Excel table, and AVI movies as well as the TrackMate file for each of the input images.
+ </br>
+ 
+4.  The bottom-right quadrant logs the process. </br>
