@@ -45,7 +45,8 @@ I. export data from incucyte, download Fiji and update it
 2. Download the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm) 
 3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 4. Update ImageJ/Fiji > `Help` > `Update...`
-5. Close Fiji
+5. If need Download TrackMate 
+6. Close Fiji
 
 II. Starting Cellpose GUI on PC
 ------
@@ -106,5 +107,9 @@ V. Predict Cellpose and fuse the timelapse data per well
 3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
 4. Click Run and follow the instructions
 
-
+V. TrackMate
+------
+1. Open FIJI
+2. Open a timelapse data
+3. Start TrackMate
 
