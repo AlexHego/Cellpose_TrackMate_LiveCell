@@ -6,8 +6,13 @@ A generalist algorithm for cell and nucleus segmentation.
 
 Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Cellpose 2.0 (human-in-the-loop), read the [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1) or watch the [talk](https://www.youtube.com/watch?v=3ydtAhfq6H0). To learn about Cellpose 1.0, read the [paper](https://t.co/kBMXmPp3Yn?amp=1) or watch the [talk](https://t.co/JChCsTD0SK?amp=1). For support, please open an [issue](https://github.com/MouseLand/cellpose/issues).  Please find the detailed documentation at <span style="font-size:larger;">[cellpose.readthedocs.io]
 
+## TrackMate
+
+
 ### Step-by-step tutorial
+------
 #### I. export data from incucyte, download Fiji and update it
+------
 1. Connect to your incucyte session and export the data with the following prefix :
     - `Phase_` for Phase contrast data
     - `Green_` for green fluorescence
@@ -18,16 +23,19 @@ Cellpose was written by Carsen Stringer and Marius Pachitariu. To learn about Ce
 5. Close Fiji
 
 #### II. Starting Cellpose GUI on PC
+------
 1. double click on Cellpose_2 shortcut on the desktop
 2. (optional) Starting Cellpose GUI by with conda : Activate miniconda3 > `conda activate cellpose` > `python -m cellpose`
 
 #### III. Using the Cellpose GUI
+------
 The GUI serves : Running the segmentation algorithm, manually labelling data, fine-tuning a pretrained cellpose model on your own data.
 </br>
 
 <img src="https://www.cellpose.org/static/images/cellpose_gui.png" width="480" title="cellpose2 gui screenshot" alt="cellpose2 gui screenshot" align="right" vspace = "50">
 
 #### Main GUI controls
+------
 - `Pan` = left-click + drag
 
 - `Zoom` = scroll wheel (or +/= and - buttons)
@@ -47,6 +55,7 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 **Note: ** Overlaps in masks are NOT allowed. If you draw a mask on top of another mask, it is cropped so that it doesn’t overlap with the old mask. Masks in 2D should be single strokes (if single_stroke is checked).
   
 #### Segmentation options
+------
 - `SIZE`: you can manually enter the approximate diameter for your cells, or press “calibrate” to let the model estimate it. The size is represented by a disk at the bottom of the view window (can turn this disk off by unchecking “scale disk on”).
 - `GPU`: activate it to save time
 - `MODEL`: there is a cytoplasm model and a nuclei model, choose what you want to segment
@@ -54,6 +63,7 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 - `CHAN2` (OPT): if cytoplasm model is chosen, then choose the nuclear channel for this option
 
 #### IV. Training your own cellpose model
+------
 1. Drag and drop your images .tif, .png, .jpg, .gif) into the GUI
 2. Run Try one cellpose models in the GUI. Make sure that if you have a nuclear channel you have selected it for CHAN2.
 3. Fix the region of interrest (ROIs) by deleting incorrect (CTRL + left click) and drawing new ones (right click and close the shape)
@@ -65,12 +75,13 @@ The GUI serves : Running the segmentation algorithm, manually labelling data, fi
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
 #### V. Predict Cellpose and fuse the timelapse data per well
+------
 1. Open FIJI
 2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
 3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
 4. Click Run and follow the instructions
 
-#### V. Predict Cellpose with [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md)
+
 1. Open FIJI
 
 
