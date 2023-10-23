@@ -16,7 +16,7 @@ TrackMate
 ------
 TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
 
-<img src="https://imagej.net/media/plugins/trackmate/trackmate-mask-detector-tutorial-bis-5.gif" width="200" title="trackmate" alt="trackmate" align="center" vspace = "50">
+<img src="https://cellmig.files.wordpress.com/2020/09/stardist_trackmate.gif"  width="250" height="250" />
 
 For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
