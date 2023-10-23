@@ -3,11 +3,13 @@ Cellpose
 ------
 A generalist algorithm for cell and nucleus segmentation. 
 
-<img src="https://www.cellpose.org/static/images/cellpose2.gif" width="500" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
+<img src="https://www.cellpose.org/static/images/cellpose2.gif" width="400" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
 
 ### Citation Cellpose
 Cellpose is based on a publication, If you use it successfully for your research please be so kind to cite these papers : for the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
+
+For details, please see [https://github.com/MouseLand/cellpose](https://github.com/MouseLand/cellpose)
 
 
 TrackMate
@@ -21,7 +23,9 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite these papers:
 
 Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832.  https://doi.org/10.1038/s41592-022-01507-1 (https://www.nature.com/articles/s41592-022-01507-1)
+
 </br> and / or </br>
+
 Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, __TrackMate: An open and extensible platform for single-particle tracking__, Methods, Available online 3 October 2016, ISSN 1046-2023, http://dx.doi.org/10.1016/j.ymeth.2016.09.016 (http://www.sciencedirect.com/science/article/pii/S1046202316303346)
 
 
