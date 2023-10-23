@@ -112,4 +112,10 @@ V. TrackMate
 1. Open FIJI
 2. Open a timelapse data
 3. Start TrackMate
+4. Select a detector > `Label image detector`
+5. Segment in channel 2
+6. Filter the spot if needed like size, position etc...
+7. Select LAP Tracker and set the `Linking max distance`, `Gap-closing max distance`, `Gap-closing max frame gap`
+8. Save the .xml file to run the analysis in batch
+9. 
 
