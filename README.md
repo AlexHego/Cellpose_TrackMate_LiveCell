@@ -6,13 +6,15 @@ A generalist algorithm for cell and nucleus segmentation.
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="500" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
 
-### CITATION: 
+### Citation Cellpose
 Cellpose is based on a publication, If you use it successfully for your research please be so kind to cite these papers : for the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
 
 
 TrackMate
 ------
 TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
+
+For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
 ### Citation TrackMate
 
