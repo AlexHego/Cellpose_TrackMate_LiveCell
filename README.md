@@ -1,4 +1,23 @@
 # Cellpose and TrackMate for Live cells imaging
+
+- [Cellpose and TrackMate for Live cells imaging](#cellpose-and-trackmate-for-live-cells-imaging)
+  * [Cellpose](#cellpose)
+  * [TrackMate](#trackmate)
+- [Step-by-step tutorial](#step-by-step-tutorial)
+  * [I. export data from incucyte and set up Fiji](#i-export-data-from-incucyte-and-set-up-fiji)
+  * [II. Starting Cellpose GUI on PC](#ii-starting-cellpose-gui-on-pc)
+  * [III. Using the Cellpose GUI](#iii-using-the-cellpose-gui)
+      * [Main GUI controls](#main-gui-controls)
+      * [Segmentation options](#segmentation-options)
+  * [IV. Training your own cellpose model](#iv-training-your-own-cellpose-model)
+  * [V. Predict Cellpose and fuse the timelapse data per well](#v-predict-cellpose-and-fuse-the-timelapse-data-per-well)
+  * [V. TrackMate](#v-trackmate)
+  * [VI. TrackMate Batcher](#vi-trackmate-batcher)
+  * [Citation](#citation)
+    + [Citation Cellpose](#citation-cellpose)
+    + [Citation TrackMate](#citation-trackmate)
+    + [Citation BioImaging And Optics Platform BIOP](#citation-bioimaging-and-optics-platform-biop)
+
 Cellpose
 ------
 Cellpose is a generalist, Deep Learning-based segmentation method, which can precisely segment cells from a wide range of image types. Cellpose was trained on a new dataset of highly varied images of cells, containing over 70,000 segmented objects. Cellpose 2.0 a is new package which includes an ensemble of diverse pretrained models as well as a human-in-the-loop pipeline for quickly prototyping new specialist models. Specialist models pretrained on the Cellpose dataset can achieve state-of-the-art segmentation on new image categories with very little user-provided training data.
@@ -15,7 +34,7 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
 # Step-by-step tutorial
 
-I. export data from incucyte, download Fiji and update it
+I. export data from incucyte and set up Fiji
 ------
 1. Connect to your incucyte session and export the data with the following prefix :
     - `Phase_` for Phase contrast data
@@ -129,7 +148,7 @@ Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Char
 </br> and / or </br>
 Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, __TrackMate: An open and extensible platform for single-particle tracking__, Methods, Available online 3 October 2016, ISSN 1046-2023, http://dx.doi.org/10.1016/j.ymeth.2016.09.016 (http://www.sciencedirect.com/science/article/pii/S1046202316303346)
 
-### Citation BioImaging And Optics Platform (BIOP) 
+### Citation BioImaging And Optics Platform BIOP 
 Please note that Cellpose wrapper for Fiji was created by BioImaging And Optics Platform (BIOP). If you use it successfully for your research please be so kind to cite this repository:
 
 [BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
