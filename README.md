@@ -5,13 +5,6 @@ Cellpose is a generalist, Deep Learning-based segmentation method, which can pre
 
 <img src="https://www.cellpose.org/static/images/cellpose2.gif" width="400" title="cellpose2" alt="cellpose2 vs cellpose1 results" align="center" vspace = "50">
 
-
-### Citation Cellpose
-Cellpose is based on a publication, If you use it successfully for your research please be so kind to cite these papers : for the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
-
-For details, please see [https://github.com/MouseLand/cellpose](https://github.com/MouseLand/cellpose)
-
-
 TrackMate
 ------
 TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
@@ -19,20 +12,6 @@ TrackMate provides the tools to perform single particle tracking (SPT). SPT is a
 <img src="https://cellmig.files.wordpress.com/2020/09/stardist_trackmate.gif"  width="250" height="250" />
 
 For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
-
-### Citation TrackMate
-
-Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite these papers:
-
-Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832.  https://doi.org/10.1038/s41592-022-01507-1 (https://www.nature.com/articles/s41592-022-01507-1)
-
-</br> and / or </br>
-
-Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, __TrackMate: An open and extensible platform for single-particle tracking__, Methods, Available online 3 October 2016, ISSN 1046-2023, http://dx.doi.org/10.1016/j.ymeth.2016.09.016 (http://www.sciencedirect.com/science/article/pii/S1046202316303346)
-
-
-[BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
-
 
 # Step-by-step tutorial
 
@@ -44,8 +23,9 @@ I. export data from incucyte, download Fiji and update it
     - `Red_` for red fluorescence
 2. Download the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm) 
 3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
-4. Update ImageJ/Fiji > `Help` > `Update...`
-5. If need Download TrackMate 
+4. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
+    - Add `PTBIOP`
+    - Add `TrackMate-Helper`
 6. Close Fiji
 
 II. Starting Cellpose GUI on PC
@@ -120,7 +100,7 @@ V. TrackMate
 
 VI. TrackMate Batcher
 ------
-<img src="https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/f/9/f9933e441404488234805dc40182cdbec1108725_2_651x750.png" width="500" align="right" />
+<img src="https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/f/9/f9933e441404488234805dc40182cdbec1108725_2_651x750.png" width="300" align="right" />
 
 1.  Top-left specify the paths to the input images. You can drag and drop folder and files on this quadrant, they will be added automatically
 </br>
@@ -132,3 +112,24 @@ VI. TrackMate Batcher
  </br>
  
 4.  The bottom-right quadrant logs the process. </br>
+
+Citation
+------
+
+### Citation Cellpose
+Cellpose is based on a publication, If you use it successfully for your research please be so kind to cite these papers : for the new human-in-the-loop training or the new models, please cite the Cellpose 2.0 [paper](https://www.biorxiv.org/content/10.1101/2022.04.01.486764v1). </br> If you use the original built-in models (`cyto` or `nuclei`), please cite the Cellpose 1.0 [paper](https://t.co/kBMXmPp3Yn?amp=1).
+
+For details, please see [https://github.com/MouseLand/cellpose](https://github.com/MouseLand/cellpose)
+
+### Citation TrackMate
+
+Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite these papers:
+
+Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832.  https://doi.org/10.1038/s41592-022-01507-1 (https://www.nature.com/articles/s41592-022-01507-1)
+</br> and / or </br>
+Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, __TrackMate: An open and extensible platform for single-particle tracking__, Methods, Available online 3 October 2016, ISSN 1046-2023, http://dx.doi.org/10.1016/j.ymeth.2016.09.016 (http://www.sciencedirect.com/science/article/pii/S1046202316303346)
+
+### Citation BioImaging And Optics Platform (BIOP) 
+Please note that Cellpose wrapper for Fiji was created by BioImaging And Optics Platform (BIOP). If you use it successfully for your research please be so kind to cite this repository:
+
+[BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
