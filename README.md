@@ -34,7 +34,7 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
 # Step-by-step tutorial
 
-I. export data from incucyte and set up Fiji
+I. export data from incucyte, installation Fiji and Cellpose
 ------
 1. Connect to your incucyte session and export the data with the following prefix :
     - `Phase_` for Phase contrast data
@@ -46,6 +46,7 @@ I. export data from incucyte and set up Fiji
     - Add `PTBIOP`
     - Add `TrackMate-Helper`
 6. Close Fiji
+7. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
 
 II. Starting Cellpose GUI on PC
 ------
