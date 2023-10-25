@@ -1,14 +1,15 @@
 # Cellpose and TrackMate for Live cells imaging
 
+## Table of content
 - [Cellpose and TrackMate for Live cells imaging](#cellpose-and-trackmate-for-live-cells-imaging)
   * [Cellpose](#cellpose)
   * [TrackMate](#trackmate)
 - [Step-by-step tutorial](#step-by-step-tutorial)
-  * [I. export data from incucyte and set up Fiji](#i-export-data-from-incucyte-and-set-up-fiji)
+  * [I. export data from incucyte, installation Fiji and Cellpose](#i-export-data-from-incucyte--installation-fiji-and-cellpose)
   * [II. Starting Cellpose GUI on PC](#ii-starting-cellpose-gui-on-pc)
   * [III. Using the Cellpose GUI](#iii-using-the-cellpose-gui)
-      * [Main GUI controls](#main-gui-controls)
-      * [Segmentation options](#segmentation-options)
+    * [Main GUI controls](#main-gui-controls)
+    * [Segmentation options](#segmentation-options)
   * [IV. Training your own cellpose model](#iv-training-your-own-cellpose-model)
   * [V. Predict Cellpose and fuse the timelapse data per well](#v-predict-cellpose-and-fuse-the-timelapse-data-per-well)
   * [V. TrackMate](#v-trackmate)
