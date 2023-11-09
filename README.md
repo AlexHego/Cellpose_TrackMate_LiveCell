@@ -38,13 +38,13 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 I. export data from incucyte, installation Fiji and Cellpose
 ------
 1. Connect to your incucyte session and export the data with the following prefix :
-    - `Phase_` for Phase contrast data
-    - `Green_` for green fluorescence
-    - `Red_` for red fluorescence
+    - `Phase` for Phase contrast data
+    - `Green` for green fluorescence
+    - `Red` for red fluorescence
 2. Download the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm) 
 3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 4. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
-    - Add `PTBIOP`
+    - Add `PTBIOP` Only if you have big data bigger than 1/4 of your VRAM 
     - Add `TrackMate-Helper`
 6. Close Fiji
 7. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
