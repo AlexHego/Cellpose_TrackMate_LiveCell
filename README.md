@@ -39,7 +39,7 @@ I. export data from incucyte, installation Fiji and Cellpose
     - `Phase` for Phase contrast data
     - `Green` for green fluorescence
     - `Red` for red fluorescence
-2. Download the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm) 
+2. Download the script the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) if you have data from incucyte microscope.
 3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 4. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
     - Add `PTBIOP` Only if you have big data bigger than 1/4 of your VRAM 
