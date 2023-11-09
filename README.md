@@ -1,7 +1,5 @@
 # Cellpose and TrackMate for Live cells imaging
 
-## Table of content
-- [Cellpose and TrackMate for Live cells imaging](#cellpose-and-trackmate-for-live-cells-imaging)
   * [Cellpose](#cellpose)
   * [TrackMate](#trackmate)
 - [Step-by-step tutorial](#step-by-step-tutorial)
@@ -11,7 +9,7 @@
     * [Main GUI controls](#main-gui-controls)
     * [Segmentation options](#segmentation-options)
   * [IV. Training your own cellpose model](#iv-training-your-own-cellpose-model)
-  * [V. Predict Cellpose and fuse the timelapse data per well](#v-predict-cellpose-and-fuse-the-timelapse-data-per-well)
+  * [OPTION for big data or small GPU](#option-for-big-data-or-small-gpu)
   * [V. TrackMate](#v-trackmate)
   * [VI. TrackMate Batcher](#vi-trackmate-batcher)
   * [Citation](#citation)
@@ -101,8 +99,9 @@ IV. Training your own cellpose model
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
-V. Predict Cellpose and fuse the timelapse data per well
+OPTION for big data or small GPU 
 ------
+Predict Cellpose with BIOP per time point and then fuse the timelapse data per well
 1. Open FIJI
 2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
 3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
