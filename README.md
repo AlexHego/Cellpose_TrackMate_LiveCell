@@ -39,17 +39,12 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
 I. export data from incucyte, installation Fiji and Cellpose
 ------
-1. OPTION for incucyte users: Connect to your incucyte session and export the data with the following prefix :
-    - `Phase` for Phase contrast data
-    - `Green` for green fluorescence
-    - `Red` for red fluorescence
- Download the script the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) if you have data from incucyte microscope.
-2. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
-3. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
+1. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
+2. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
     - Add `PTBIOP` Only if you have big data bigger than 1/4 of your VRAM 
     - Add `TrackMate-Helper`
-4. Close Fiji
-5. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
+3. Close Fiji
+4. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
 
 II. Starting Cellpose GUI on PC
 ------
@@ -103,13 +98,6 @@ IV. Training your own cellpose model
 8. Next you can repeat #3-#6 as many times as is necessary.
 9. The trained model is available to use in the future in the GUI in the “custom model” section and is saved in your image folder.
   
-OPTION for big data or small GPU 
-------
-Predict Cellpose with BIOP per time point and then fuse the timelapse data per well
-1. Open FIJI
-2. Drag and drop the script [Cellpose_Prediction_fuse_fluo.ijm](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose_Prediction_fuse_fluo.ijm)
-3. Correct the variables in the script if needed, like size of the cells, location of your model etc...
-4. Click Run and follow the instructions
 
 V. TrackMate
 ------
@@ -153,7 +141,3 @@ Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Char
 </br> and / or </br>
 Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, __TrackMate: An open and extensible platform for single-particle tracking__, Methods, Available online 3 October 2016, ISSN 1046-2023, http://dx.doi.org/10.1016/j.ymeth.2016.09.016 (http://www.sciencedirect.com/science/article/pii/S1046202316303346)
 
-### Citation BioImaging And Optics Platform BIOP 
-Please note that Cellpose wrapper for Fiji was created by BioImaging And Optics Platform (BIOP). If you use it successfully for your research please be so kind to cite this repository:
-
-[BIOP wrappers :](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md) 
