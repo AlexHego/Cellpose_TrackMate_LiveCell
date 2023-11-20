@@ -33,21 +33,21 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
 # Step-by-step tutorial
 
-<iframe src="https://mseduculiegebe-my.sharepoint.com/personal/alexandre_hego_uliege_be/_layouts/15/Doc.aspx?sourcedoc={6396cc43-30d2-40a9-bab8-3872ad769c81}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+[powerpoint presentation MiFoBio 2023](https://mseduculiegebe-my.sharepoint.com/:p:/g/personal/alexandre_hego_uliege_be/EUPMlmPSMKlAurg4cq12nIEBEWfXXMQ6iWRw0I6nw4GqLw?e=4bGhHI)
 
 I. export data from incucyte, installation Fiji and Cellpose
 ------
-1. Connect to your incucyte session and export the data with the following prefix :
+1. OPTION for incucyte users: Connect to your incucyte session and export the data with the following prefix :
     - `Phase` for Phase contrast data
     - `Green` for green fluorescence
     - `Red` for red fluorescence
-2. Download the script the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) if you have data from incucyte microscope.
-3. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
-4. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
+ Download the script the script [incucyte_merge_files_v3.ijm](https://github.com/AlexHego/incucyte/blob/main/incucyte_merge_files_v3.ijm) if you have data from incucyte microscope.
+2. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
+3. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
     - Add `PTBIOP` Only if you have big data bigger than 1/4 of your VRAM 
     - Add `TrackMate-Helper`
-6. Close Fiji
-7. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
+4. Close Fiji
+5. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
 
 II. Starting Cellpose GUI on PC
 ------
