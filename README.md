@@ -27,12 +27,13 @@ TrackMate
 ------
 TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
 
-<img src="https://cellmig.files.wordpress.com/2020/09/stardist_trackmate.gif"  width="250" height="250" />
+<img src="https://cellmig.files.wordpress.com/2020/09/stardist_trackmate.gif"  width="250" height="250" /> </br>
 
 For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 
 # Step-by-step tutorial
 
+<img src="https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose%20and%20TrackMate%20for%20Phase.gif" align="center" vspace = "50">
 [powerpoint presentation MiFoBio 2023](https://mseduculiegebe-my.sharepoint.com/:p:/g/personal/alexandre_hego_uliege_be/EUPMlmPSMKlAurg4cq12nIEBEWfXXMQ6iWRw0I6nw4GqLw?e=4bGhHI)
 
 I. export data from incucyte, installation Fiji and Cellpose
