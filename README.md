@@ -3,19 +3,18 @@
   * [Cellpose](#cellpose)
   * [TrackMate](#trackmate)
 - [Step-by-step tutorial](#step-by-step-tutorial)
-  * [I. export data from incucyte, installation Fiji and Cellpose](#i-export-data-from-incucyte--installation-fiji-and-cellpose)
+    + [Presentation Link (Alexandre Hego CC BY-NC-SA)](#presentation-link--alexandre-hego-cc-by-nc-sa-)
+  * [I. installation Fiji and Cellpose](#i-installation-fiji-and-cellpose)
   * [II. Starting Cellpose GUI on PC](#ii-starting-cellpose-gui-on-pc)
   * [III. Using the Cellpose GUI](#iii-using-the-cellpose-gui)
-    * [Main GUI controls](#main-gui-controls)
-    * [Segmentation options](#segmentation-options)
+   * [Main GUI controls](#main-gui-controls)
+  * [Segmentation options](#segmentation-options)
   * [IV. Training your own cellpose model](#iv-training-your-own-cellpose-model)
-  * [OPTION for big data or small GPU](#option-for-big-data-or-small-gpu)
   * [V. TrackMate](#v-trackmate)
   * [VI. TrackMate Batcher](#vi-trackmate-batcher)
   * [Citation](#citation)
     + [Citation Cellpose](#citation-cellpose)
     + [Citation TrackMate](#citation-trackmate)
-    + [Citation BioImaging And Optics Platform BIOP](#citation-bioimaging-and-optics-platform-biop)
 
 Cellpose
 ------
@@ -37,12 +36,13 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 ### Presentation Link (Alexandre Hego CC BY-NC-SA)
 [powerpoint presentation MiFoBio 2023](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose%20and%20TrackMate%20for%20Phase.pdf)
 
-I. export data from incucyte, installation Fiji and Cellpose
+I. installation Fiji and Cellpose
 ------
+If your images exceed 25% of your GPU's VRAM capacity, it's better to perform predictions sequentially, timepoint by timepoint. 
 1. Download [imageJ/Fiji](https://imagej.net/software/fiji/downloads)
 2. Update ImageJ/Fiji > `Help` > `Update...` > `Manage Update Sites` > 
-    - Add `PTBIOP` Only if you have big data bigger than 1/4 of your VRAM 
     - Add `TrackMate-Helper`
+    - Add `TrackMate-Cellpose`
 3. Close Fiji
 4. Installation Cellpose in [English](https://github.com/MouseLand/cellpose) or  in [French](https://forgemia.inra.fr/gt-maiia/kit-du-debutant/-/wikis/Installation-Cellpose-sur-Windows10#installation-cellpose-via-anaconda3-alex-nicolas)
 
