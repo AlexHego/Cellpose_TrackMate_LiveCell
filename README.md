@@ -3,18 +3,18 @@
   * [Cellpose](#cellpose)
   * [TrackMate](#trackmate)
 - [Step-by-step tutorial](#step-by-step-tutorial)
-    + [Presentation Link (Alexandre Hego CC BY-NC-SA)](#presentation-link--alexandre-hego-cc-by-nc-sa-)
+  * [Presentation Link (Alexandre Hego CC BY-NC-SA)](#presentation-link--alexandre-hego-cc-by-nc-sa-)
   * [I. installation Fiji and Cellpose](#i-installation-fiji-and-cellpose)
   * [II. Starting Cellpose GUI on PC](#ii-starting-cellpose-gui-on-pc)
   * [III. Using the Cellpose GUI](#iii-using-the-cellpose-gui)
-   * [Main GUI controls](#main-gui-controls)
+     * [Main GUI controls](#main-gui-controls)
   * [Segmentation options](#segmentation-options)
   * [IV. Training your own cellpose model](#iv-training-your-own-cellpose-model)
   * [V. TrackMate](#v-trackmate)
   * [VI. TrackMate Batcher](#vi-trackmate-batcher)
   * [Citation](#citation)
-    + [Citation Cellpose](#citation-cellpose)
-    + [Citation TrackMate](#citation-trackmate)
+     + [Citation Cellpose](#citation-cellpose)
+     + [Citation TrackMate](#citation-trackmate)
 
 Cellpose
 ------
@@ -33,7 +33,7 @@ For details, please see [http://fiji.sc/TrackMate](http://fiji.sc/TrackMate)
 # Step-by-step tutorial
 
 <img src="https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose%20and%20TrackMate%20for%20Phase.gif" align="center" vspace = "50"> </br>
-### Presentation Link (Alexandre Hego CC BY-NC-SA)
+### Presentation Link 
 [powerpoint presentation MiFoBio 2023](https://github.com/AlexHego/Cellpose_TrackMate_LiveCell/blob/main/Cellpose%20and%20TrackMate%20for%20Phase.pdf)
 
 I. installation Fiji and Cellpose
